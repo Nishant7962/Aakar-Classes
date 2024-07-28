@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1180px;
+    margin: 10px auto;
+}
+:root{
+    --primary-text-color:#ffa010;
+    --secondary-text-color:#577592;
+    --accent-color:#f38911;
+    --accent-color-dark:#ff8f0f;
+    --padding-inline-section:20px;
+}
+
+body{
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    color:var(--primary-text-color);
+}
+
+.dark-mode{
+    background-color: black;
+    color: #fff;
+}
+.toggle-btn {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: large;
+}
+p{
+    font-family: 'roboto',sans-serif;
+    font-size: 1.25rem;
+    color: rgb(10, 8, 37);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+
+/* Utility Classes*/
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.carousel-title{
+    font-family: 'poppins',sans-serif;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+/*Top Banner*/
+.top-banner{
+    background-image: url('../../assets/img/asset\ 18.png');
+    background-color: #03d9ffcf;
+    background-size: 300px;
+    width: 100%;
+}
+.banner-text{
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 1rem;
+    animation: blinker 1s linear infinite;
+}
+
+  
+  @keyframes blinker  {
+    50% {
+      opacity: 0;
+    }
+  }
+/*Navigation Bar*/
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 856px;
+}
+.nav-links ul{
+    justify-content: start;
+    gap: 23px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+}
+.hover-link{
+    color: hwb(39 0% 0%);
+    transition: 0.2s ease-out;
+    text-decoration: none;
+}
+.hover-link:hover{
+    color: #03d9ffcf;
+}
+.primary-button{
+    background-color:#03d9ffcf;
+    border-radius: 6px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover{
+    background-color: hwb(39 0% 0%);
+
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
+
+.header{
+    padding: 58px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 58px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+
+.get-started-btn{
+    margin-top: 20px;
+}
+.header-right img{
+    width: 600px;
+}
+
+/* Course Hover*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eb8b1d;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content .dropdown-column {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 5px 0;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #000000;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+/* Toggle CSS */
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+
+body.dark h1, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+  
+  

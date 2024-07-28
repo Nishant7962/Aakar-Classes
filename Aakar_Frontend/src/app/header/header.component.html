@@ -1,0 +1,84 @@
+<!--Top Banner-->
+<div class="top-banner">
+  <div>
+    <div class="banner-text">
+      <strong
+        >Admission are open for 2024 - 2025. Grab your Seat Today !!!</strong
+      >
+    </div>
+  </div>
+</div>
+
+<!-- nav bar -->
+<nav>
+  <div class="container main-nav flex">
+    <a href="#" class="company-logo">
+      <img src="../../assets/img/Aakaar-logo.png" alt="company-logo" />
+    </a>
+    <div class="nav-links">
+      <ul class="flex">
+        <li>
+          <a routerLink="home" href="home" class="hover-link"
+            ><strong>Home</strong></a
+          >
+        </li>
+        <li>
+          <a routerLink="enquiry" href="enquiry" class="hover-link"
+            ><strong>Enquiry</strong></a
+          >
+        </li>
+        <li class="dropdown">
+          <a routerLink="courses" href="courses" class="hover-link"
+            ><strong>Courses</strong></a
+          >
+          <div class="dropdown-content">
+            <div class="dropdown-column">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+            </div>
+            <div class="dropdown-column">
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+            </div>
+            <div class="dropdown-column">
+              <a href="#">Link 5</a>
+              <a href="#">Link 6</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a routerLink="contact" href="contact" class="hover-link"
+            ><strong>Contact Us</strong></a
+          >
+        </li>
+        <li>
+          <a routerLink="sign_in" href="sign_in" class="primary-button"
+            >Sign in</a
+          >
+        </li>
+        <li>
+          <a routerLink="sign_up" href="sign_up" class="primary-button"
+            >Sign up</a
+          >
+        </li>
+        <!-- Your component's HTML file -->
+        <li>
+          <div>
+            <input
+              type="checkbox"
+              class="checkbox"
+              id="checkbox"
+              [(ngModel)]="isChecked"
+              (change)="toggleTheme()"
+            />
+            <label for="checkbox" class="checkbox-label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

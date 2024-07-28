@@ -1,0 +1,7 @@
+<!-- app.component.html -->
+<div [ngClass]="{'dark-mode': darkMode, 'light-mode': !darkMode}">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+  
